@@ -1,0 +1,125 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f6f3;
+    background-image:
+        radial-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+        radial-gradient(rgba(0,0,0,0.015) 1px, transparent 1px);
+    background-size: 3px 3px, 6px 6px;
+    background-position: 0 0, 1px 1px;
+    color: #111;
+    font-family: "Source Serif 4", serif;
+    line-height: 1.7;
+}
+
+
+.corner-logo {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 130px;
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    .corner-logo {
+        width: 90px;
+        bottom: 16px;
+        right: 16px;
+        opacity: 0.7;
+    }
+}
+
+
+/* Page container */
+.page {
+    max-width: 720px;
+    margin: 80px auto;
+    padding: 0 24px;
+}
+
+/* Content */
+.content h1 {
+    font-family: "Special Elite", serif;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.lead {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.02em;
+}
+
+
+.content p {
+    font-size: 1.05rem;
+    margin-bottom: 1.6rem;
+}
+
+.content {
+    text-align: left;
+}
+.cta-wrapper {
+    text-align: center;
+}
+
+
+/* CTA text */
+.cta-text {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+
+/* Button */
+.cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 999px;
+    background: #6f6f6f;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s ease;
+}
+
+.cta-button:hover {
+    background: #4f4f4f;
+}
+
+/* Footer */
+.footer {
+    margin-top: 5rem;
+    font-size: 0.85rem;
+}
+
+.footer a {
+    color: #555;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .page {
+        margin: 48px auto;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+}
